@@ -7,6 +7,8 @@ add_library( hougeo json.cpp json.h types.h )
 # additional include directories
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
 
+target_include_directories(hougeo PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../")
+
 # installation
 install ( FILES
   json.h
